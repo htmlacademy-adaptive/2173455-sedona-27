@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ekaterina Sevostianova](https://up.htmlacademy.ru/adaptive/27/user/2173455).
-* Наставник: `Неизвестно`.
+* Наставник: [Victoria Kulikova](https://htmlacademy.ru/profile/id293745).
 
 ---
 
