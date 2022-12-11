@@ -1,0 +1,277 @@
+/*INDEX
+
+.main-index {
+    color: #000000;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  .sedona-city {
+
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 282px;
+  }
+
+  .sedona {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    width: 630px;
+    margin-top: 65px;
+  }
+
+  .sedona-description {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 90px;
+    margin-top: 5px;
+  }
+
+  .advantages {
+    text-align: center;
+  }
+
+  .tile-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+
+  .tile-list-item--wide {
+    width: 100%;
+    display: flex;
+  }
+
+  .advantage-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 384px;
+    align-items: center;
+    padding: 92px 0 111px;
+    box-sizing: border-box;
+  }
+
+  .advantage-container-recommendation {
+    padding: 82px 0 90px;
+  }
+
+  .advantage-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    width: 172px;
+    margin-top: 0px;/*вот тут я очтановилась подгонять под пиксели
+  }
+
+  .advantage-title::after {
+
+    width: 60px;
+    height: 2px;
+    content: '';
+    display: block;
+    margin: 30px auto 0;
+  }
+
+  .advantage-title-blue::after {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .advantage-title-white{
+    margin-top: 10px;
+  }
+
+  .advantage-title-white::after {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .advantage-description {
+    font-size: 18px;
+    line-height: 21px;
+    width: 230px;
+    margin: 0;
+  }
+
+  .advantage-description-white{
+    margin-bottom: 10px;
+    width: 230px;
+  }
+
+  .tile-list-item {
+    color: #000;
+    background-color: rgba(131, 179, 211, 0.12);
+    padding: 0;
+  }
+
+  .tile-list-item--wide {
+    background-color: rgba(130, 179, 211, 1);
+    color: #fff;
+  }
+
+  .tile-list-item:nth-child(3) {
+    background-color: rgba(131, 179, 211, 0.2);
+  }
+
+  .tile-list-item:nth-child(7) {
+    background-color: transparent;
+  }
+
+  /*.tile-list-item-recommendation {
+    min-height: 384px;
+  }
+
+  .food {
+    padding-bottom: 5px;
+  }
+
+  .advantage-title-recommendation{
+    margin-top: 25px;
+  margin-bottom: 0px;
+  }
+
+  .advantage-description-recommendation{
+    margin-bottom: 0;
+  }
+
+  .interest {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    min-height: 406px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 304px 86px 304px;
+    box-sizing: border-box;
+    min-height: 400px;
+  }
+
+  .interest-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 0;
+  }
+
+  .dates {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-transform: none;
+    margin-bottom: 52px;
+  }
+
+  .button-search {
+    background-color: #756157;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    width: 376px;
+    min-height: 50px;
+    border: #756157;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px;
+  }
+
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    background-image: url('../images/subscription-picture.jpg');
+    background-color: #756157;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    align-items: center;
+    padding: 66px 0 104px;
+    box-sizing: border-box;
+    min-height: 410px;
+  }
+
+  .subscription-index {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  .spam-index {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 54px;
+    min-width: 475px;
+  }
+
+  .newsletter-form {
+    display: flex;
+    width: 684px;
+    margin-top: 4px;
+  }
+
+  .field {
+    width: 452px;
+    height: 52px;
+    border: #FFFFFF;
+    border-radius: 4px 0 0 4px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 15px;
+  }
+
+  .newsletter-button {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 232px;
+    border: #82B3D3;
+    border-radius: 0 4px 4px 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+
+
+  .button-telegram-index{
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .button-youtube-index {
+    margin-left: 0;
+    margin-right: 11px;
+  }
+
+  .logo-html-index {
+    margin-top: 8px;
+  }*/
