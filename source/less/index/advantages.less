@@ -1,15 +1,12 @@
-@ad-path: "../../img/welcome-picture.jpg";
-@color-block-one-two-button: rgba(129, 179, 210, 1);
-@color-basic: rgba(255, 255, 255, 1);
-@color-benefits: rgba(238, 238, 238, 1);
-
 
 .advantages__header {
   background-color: @color-basic;
 }
 
 .advantages__header-image {
-  background: #87cefa url(@ad-path) 50% 25% no-repeat;
+  background: #87cefa url("../../img/welcome-picture.jpg") no-repeat;
+  background-size: cover;
+  height: 518px;
 }
 
 .advantages__item--number-one {
@@ -17,7 +14,9 @@
 }
 
 .advantages__image-city {
-  background-color: #ff7f50;
+  background: #ff7f50 url("../../img/city.jpg") no-repeat;
+  background-size: cover;
+  height: 260px;
 }
 
 .advantages__list-recommendations {
@@ -25,7 +24,9 @@
 }
 
 .advantages__image-bridge {
-  background-color: #deb887;
+  background: #deb887 url("../../img/bridge.jpg") no-repeat;
+  background-size: cover;
+  height: 260px;
 }
 
 .advantages__item--number-two {
@@ -35,5 +36,3 @@
 .advantages__list-benefits {
   background-color: @color-benefits;
 }
-
-

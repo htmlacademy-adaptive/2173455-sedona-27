@@ -1,18 +1,18 @@
-@color-behind: #E7E5E5;
+
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('source\fonts\ptsans.woff2') format('woff2');
+  src: url("../../fonts/ptsans.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('source\fonts\ptsansbold.woff2') format('woff2');
+  src: url("../../fonts/ptsansbold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -23,9 +23,8 @@
 }
 
 html {
-  background: #f2f2f2;
+  background-color: @color-behind;
   height: 100%;
-
 }
 
 html,
@@ -40,10 +39,20 @@ body {
   min-height: 100%;
   width: 1200px;
   margin: 0 auto;
-  }
+}
 
 .page__body {
   background-color: @color-behind;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -57,7 +66,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
 
 .button {
   color: #ffffff;
@@ -67,4 +76,4 @@ body {
   text-align: center;
   cursor: pointer;
   display: inline-block;
-  }
+}
