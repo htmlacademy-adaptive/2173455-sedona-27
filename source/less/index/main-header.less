@@ -1,4 +1,7 @@
-
+.main-header {
+  background-color: @color-basic;
+  outline: 2px solid rgb(236, 35, 8);
+}
 
 .site-list__item {
   background-color: @color-basic;
@@ -8,8 +11,22 @@
   font-weight: 700;
   font-size: 14px;
   text-align: center;
+  text-decoration: none;/*почему то не работает и ссылки синего цвета*/
+  text-transform: uppercase;
+  min-height: 21px;
+  min-width: 58px;
+}
+
+.site-list__item--active {
+  background-color: @color-basic;
+  color: #766357;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 21px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   min-height: 21px;
-  min-width: 98px;
+  min-width: 58px;
 }
