@@ -1,10 +1,25 @@
 .map {
   outline: 2px solid rgb(8, 234, 234);
-
 }
 
 .map__image-map {
-  background: @map-color url("../../img/map-tablet.jpg") no-repeat;
+  background: @map-color url("../../img/map-mobile.jpg") no-repeat;
   background-size: cover;
   height: 350px;
+}
+
+@media (min-width: @tablet-width) {
+  .map__image-map {
+    background: @map-color url("../../img/map-tablet.jpg") no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__image-map {
+    background: @map-color url("../../img/map-desktop.jpg") no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
 }
