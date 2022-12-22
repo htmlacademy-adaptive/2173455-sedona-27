@@ -3,7 +3,6 @@
 
 .advantages__slogan {
   background-color: @color-basic;
-
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
@@ -19,7 +18,6 @@
 
 .advantages__intro {
   background-color: @color-basic;
-
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
@@ -38,9 +36,22 @@
 }
 
 .advantages__header-image {
-  background: #87cefa url("../../img/welcome-picture.jpg") no-repeat;
-  background-size: cover;
-  height: 518px;
+  background: #87cefa url("../../img/welcome-picture.jpg") no-repeat center;
+  height: 389px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__header-image {
+    background: #87cefa url("../../img/welcome-picture-tablet.jpg") no-repeat center;
+    height: 518px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__header-image {
+    background: #87cefa url("../../img/welcome-picture-desktop.jpg") no-repeat center;
+    height: 518px;
+  }
 }
 
 .advantages__list {
