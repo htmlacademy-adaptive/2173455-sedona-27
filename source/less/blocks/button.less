@@ -1,0 +1,33 @@
+.button {
+  display: block;
+  min-width: 100px;
+  padding: 17px 47px 15px;
+  background-color: @blue;
+  color: @white;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+
+  &:hover {
+    background-color: @blue-1;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @blue-2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    padding: 17px 71px 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    padding: 17px 121px 15px;
+  }
+}

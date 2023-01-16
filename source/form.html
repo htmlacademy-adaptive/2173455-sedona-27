@@ -65,7 +65,7 @@
         <section class="feedback">
 
           <div class="feedback__heading page-article page-article--inner">
-            <h2 class="page-article__title ">
+            <h2 class="page-article__title">
               Оставьте свой отзыв
             </h2>
             <p class="page-article__text">
@@ -120,21 +120,28 @@
                 Ваше общее впечатление:
               </legend>
 
+              <ul class="feedback__list--impression">
+                <li class="item__good">
               <label class="feedback__field radio-button">
                 <input class="radio-button__input visually-hidden" type="radio" name="impression" value="good" checked>
                 <span class="radio-button__label">Скорее положительное</span>
               </label>
-
+                </li>
+                <li class="item__bad">
               <label class="feedback__field radio-button">
                 <input class="radio-button__input visually-hidden" type="radio" name="impression" value="bad">
                 <span class="radio-button__label">Скорее отрицательное</span>
               </label>
-
+                </li>
+                <li class="item__difficult">
               <label class="feedback__field radio-button">
                 <input class="radio-button__input visually-hidden" type="radio" name="impression" value="difficult">
                 <span class="radio-button__label">Затрудняюсь ответить</span>
               </label>
+                </li>
+              </ul>
             </fieldset>
+
 
             <fieldset class="feedback__item feedback__item--visited">
               <legend class="feedback__legend feedback__legend--line">
@@ -142,25 +149,32 @@
               </legend>
 
               <div class="feedback__checkbox-wrapper">
+                <ul class="feedback__list--visited">
+<li class="item__bridge">
                 <label class="feedback__field checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="bridge" checked>
                   <span class="checkbox__label">Мост Дьявола</span>
                 </label>
-
+</li>
+<li class="item__mountain">
                 <label class="feedback__field checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="mountain" checked>
                   <span class="checkbox__label">Гора-Колокол</span>
                 </label>
-
+</li>
+<li class="item__park">
                 <label class="feedback__field checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="park" checked>
                   <span class="checkbox__label">Слайд-парк</span>
                 </label>
-
+</li>
+<li class="item__rocks">
                 <label class="feedback__field checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="rocks">
                   <span class="checkbox__label">Красные скалы</span>
                 </label>
+</li>
+</ul>
               </div>
             </fieldset>
 

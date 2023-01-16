@@ -28,10 +28,37 @@
   margin-left: 159px;
 }
 
+@media (min-width: @tablet-width) {
+  .main-header__logo-image {
+    display: flex;
+    justify-content: center;
+    margin-left: 384px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo-image {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .main-nav {
   width: auto;
   min-height: 51px;
   background-color: #826550;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    background-color: #ffffff;
+  }
 }
 
 .main-nav__toggle {
@@ -54,6 +81,14 @@
   &:active {
     background-image: url("../../img/icon-menu-active-down.svg");
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav--closed {
@@ -66,7 +101,6 @@
   border: none;
 }
 
-/* вот это делает список корявым но правильным, но крeстик не появляется*/
 .main-nav--opened {
   z-index: 2;
   display: block;
@@ -75,6 +109,18 @@
   background-color: @blue;
   cursor: pointer;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav--opened {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav--opened {
+    display: none;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -105,7 +151,7 @@
   /*display: block;*/
 }
 
-/*.main-nav__list a {
+/*.main-nav__ a {
   color: #000000;
 }*/
 
@@ -134,7 +180,20 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
-    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*width: 540px;*/
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1200px;
   }
 }
 
@@ -159,4 +218,20 @@
   white-space: nowrap;
   text-align: center;
   width: 100%;
+}
+
+.main-nav__link {
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__link {
+    color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__link {
+    color: #000000;
+  }
 }
