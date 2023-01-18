@@ -148,9 +148,27 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  /*display: block;*/
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 153px);
+    grid-auto-flow: column;
+    grid-template-areas: "ali bli . cli dli";
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 153px);
+    grid-auto-flow: column;
+    grid-template-areas: "ali bli . cli dli";
+    text-align: center;
+  }
+}
 /*.main-nav__ a {
   color: #000000;
 }*/
@@ -172,9 +190,21 @@
   width: 320px;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: 100%;
+    min-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
-    width: 1200px;
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -220,6 +250,30 @@
   width: 100%;
 }
 
+@media (min-width: @tablet-width) {
+  .main-list__item {
+    grid-area: "bli";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-list__item {
+    grid-area: "bli";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-list__item .site-list__item--active {
+    grid-area: "ali";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-list__item .site-list__item--active {
+    grid-area: "ali";
+  }
+}
+
 .main-nav__link {
   color: #ffffff;
 }
@@ -227,11 +281,21 @@
 @media (min-width: @tablet-width) {
   .main-nav__link {
     color: #000000;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    background: none;
+    border: none;
+    font-style: normal;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__link {
     color: #000000;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    background: none;
+    border: none;
+    font-style: normal;
   }
 }
