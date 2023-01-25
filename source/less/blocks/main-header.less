@@ -1,0 +1,339 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  background-color: @color-basic;
+  outline: 2px solid rgb(236, 35, 8);
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 1200px;
+  }
+}
+
+.main-header__logo-image {
+  left: 50%;
+  z-index: 2;
+  display: block;
+  /*position: absolute;*/
+  margin-bottom: -42px;
+  transform: translateX(-50%);
+  margin-left: 159px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo-image {
+    display: flex;
+    justify-content: center;
+    margin-left: 384px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo-image {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.main-nav {
+  width: auto;
+  min-height: 51px;
+  background-color: #826550;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    background-color: #ffffff;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  background-image: url("../../img/icon-menu.svg");
+
+  &:hover {
+    background-image: url("../../img/icon-menu-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../../img/icon-menu-active-down.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--opened {
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: @blue;
+  cursor: pointer;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav--opened {
+    /*display: none;*/
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav--opened {
+    /*display: none;*/
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    background-color: transparent;
+    background-image: url("../../img/icon-cross.svg");
+
+    &:hover {
+      opacity: 50%;
+    }
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 153px);
+    grid-auto-flow: column;
+    grid-template-areas: "ali bli . cli dli";
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 153px);
+    grid-auto-flow: column;
+    grid-template-areas: "ali bli . cli dli";
+    text-align: center;
+  }
+}
+/*.main-nav__ a {
+  color: #000000;
+}*/
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav__wrapper {
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: 100%;
+    min-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*width: 540px;*/
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1200px;
+  }
+}
+
+.site-list a {
+  position: relative;
+  display: block;
+  padding: 17px 108px 12px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: @blue;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  font-weight: 700;
+  height: 55px;
+}
+/* попытка сделать навигацию планшета и компа, изменив эти состояния
+@media (min-width: @tablet-width) {
+  .site-list a {
+    position: relative;
+    display: block;
+    padding: 17px 108px 12px;
+    padding-bottom: 13px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: @blue;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    font-weight: 700;
+    height: 55px;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .site-list a {
+    position: relative;
+    display: block;
+    padding: 17px 108px 12px;
+    padding-bottom: 13px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: @blue;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    font-weight: 700;
+    height: 55px;
+}
+}*/
+
+.main-list__item {
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .main-list__item {
+    grid-area: "bli";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-list__item {
+    grid-area: "bli";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-list__item .site-list__item--active {
+    grid-area: "ali";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-list__item .site-list__item--active {
+    grid-area: "ali";
+  }
+}
+
+.main-nav__link {
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__link {
+    color: #000000;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    background: none;
+    border: none;
+    font-style: normal;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__link {
+    color: #000000;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    background: none;
+    border: none;
+    font-style: normal;
+  }
+}
